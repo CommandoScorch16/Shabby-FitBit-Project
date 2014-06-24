@@ -32,7 +32,7 @@
     request.HTTPMethod = @"POST";
     request.HTTPBody = [body dataUsingEncoding:NSStringEncodingConversionAllowLossy];
     
-    NSURL* dog = [NSURL URLWithString:@"https://www.facebook.com/samuel.horton.37"];
+    NSURL* dogg = [NSURL URLWithString:@"https://www.facebook.com/samuel.horton.37"];
     
     NSMutableURLRequest* request1 = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:30];
     
