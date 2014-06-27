@@ -21,6 +21,7 @@
 		E6FC72681950A49D0038F55D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6FC724A1950A49D0038F55D /* UIKit.framework */; };
 		E6FC72701950A49D0038F55D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6FC726E1950A49D0038F55D /* InfoPlist.strings */; };
 		E6FC72721950A49D0038F55D /* Shabby_FitBitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FC72711950A49D0038F55D /* Shabby_FitBitTests.m */; };
+		E6FD843E195B9CE300A48616 /* webViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FD843D195B9CE300A48616 /* webViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		E6FC726D1950A49D0038F55D /* Shabby FitBitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shabby FitBitTests-Info.plist"; sourceTree = "<group>"; };
 		E6FC726F1950A49D0038F55D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E6FC72711950A49D0038F55D /* Shabby_FitBitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shabby_FitBitTests.m; sourceTree = "<group>"; };
+		E6FD843C195B9CE300A48616 /* webViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webViewController.h; sourceTree = "<group>"; };
+		E6FD843D195B9CE300A48616 /* webViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 		E6FC724C1950A49D0038F55D /* Shabby FitBit */ = {
 			isa = PBXGroup;
 			children = (
+				E6FD843C195B9CE300A48616 /* webViewController.h */,
+				E6FD843D195B9CE300A48616 /* webViewController.m */,
 				E6FC72551950A49D0038F55D /* AppDelegate.h */,
 				E6FC72561950A49D0038F55D /* AppDelegate.m */,
 				E6FC72581950A49D0038F55D /* Main.storyboard */,
@@ -252,6 +257,7 @@
 				E6FC725D1950A49D0038F55D /* ViewController.m in Sources */,
 				E6FC72571950A49D0038F55D /* AppDelegate.m in Sources */,
 				E6FC72531950A49D0038F55D /* main.m in Sources */,
+				E6FD843E195B9CE300A48616 /* webViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +462,7 @@
 				E6FC72771950A49D0038F55D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6FC72781950A49D0038F55D /* Build configuration list for PBXNativeTarget "Shabby FitBitTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +471,7 @@
 				E6FC727A1950A49D0038F55D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

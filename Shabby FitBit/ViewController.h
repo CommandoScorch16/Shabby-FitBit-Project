@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 
 @property IBOutlet UIWebView *webview;
+@property IBOutlet UITextView *tView;
 
 @end
 
