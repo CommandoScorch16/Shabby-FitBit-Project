@@ -13,7 +13,11 @@
 @property IBOutlet UIWebView *webview;
 @property IBOutlet UITextView *tView;
 
+@property IBOutlet UITextField *userNameField;
+@property IBOutlet UITextField *passwordField;
+
 @end
 
 
-int h = 2;
+NSString *userName;
+NSString *password;

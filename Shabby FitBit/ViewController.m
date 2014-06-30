@@ -13,7 +13,7 @@
 @end
 
 @implementation ViewController
-@synthesize webview, tView;
+@synthesize webview, tView, userNameField, passwordField;
 
 
 - (void)viewDidLoad
@@ -21,6 +21,8 @@
     [super viewDidLoad];
    
     
+    //This turns the text in the password field into black dots
+    passwordField.secureTextEntry = YES;
     
 }
 
@@ -29,6 +31,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData*)data
 {
@@ -41,9 +44,19 @@
     [sender resignFirstResponder];
 }
 
+- (IBAction)returnPasswordKeyboard:(UITextField *)sender {
+    [sender resignFirstResponder];
+}
 
 - (IBAction)logInWithCredentials:(UIButton *)sender {
+    userName = userNameField.text;
+    password = passwordField.text;
+    
     
 }
+
+
+
+
 
 @end
