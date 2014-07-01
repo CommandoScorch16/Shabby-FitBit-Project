@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "webViewController.h"
 
 @interface ViewController ()
 
@@ -14,6 +15,8 @@
 
 @implementation ViewController
 @synthesize webview, tView, userNameField, passwordField;
+
+
 
 
 - (void)viewDidLoad
@@ -33,11 +36,6 @@
 }
 
 
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData*)data
-{
-    
-    
-}
 
 
 - (IBAction)userNameReturnKeyboard:(UITextField *)sender {
@@ -49,11 +47,22 @@
 }
 
 - (IBAction)logInWithCredentials:(UIButton *)sender {
+    
+    if ([userNameField.text isEqualToString:@""] || [passwordField.text isEqualToString:@""])
+    {
+        UIAlertView *alertView =[[ UIAlertView alloc]initWithTitle:@"Oops!" message:@"You left something blank! Please enter something and try again!" delegate:self cancelButtonTitle:@"Try Again" otherButtonTitles:nil, nil];
+        
+        [alertView show];
+        return;
+    }
     userName = userNameField.text;
     password = passwordField.text;
     
     
+    
+    
 }
+
 
 
 

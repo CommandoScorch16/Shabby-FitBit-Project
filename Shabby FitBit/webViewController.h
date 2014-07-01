@@ -13,8 +13,15 @@
 
 @property (nonatomic, retain) IBOutlet UIWebView* webView;
 @property (nonatomic, retain) IBOutlet UITextView *tView;
+@property NSString *testConnURL;
+@property NSString *connectionStatus;
+@property int cFlag;
 
 
+//- (void)viewDidLoad;
 @end
 
+//int ii = 0;
+
+NSString *currentURL;
 

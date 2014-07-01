@@ -28,13 +28,24 @@
 }
 
 
-
+- (void)testConnectionStatusConnected
+{
+    webViewController *wView = [[webViewController alloc]init];
+    
+    [wView viewDidLoad];
+    
+    //Make sure we have the right URL
+    XCTAssert([wView.testConnURL isEqualToString:@"http://www.facebook.com/login.php"]);
+    
+    
+    
+}
 
 
 - (void)testExample
 {
     //XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
-    XCTAssertEqual(h, 2);
+    //XCTAssertEqual(h, 2);
 }
 
 @end
