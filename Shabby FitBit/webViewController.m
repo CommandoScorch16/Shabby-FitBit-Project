@@ -3,7 +3,7 @@
 //  Shabby FitBit
 //
 //  Created by Samuel Horton on 6/25/14.
-//  Copyright (c) 2014 CSCI 3308. The MIT License (MIT)
+//  Copyright (c) 2014 Samuel Horton. The MIT License (MIT)
 //
 
 #import "webViewController.h"
