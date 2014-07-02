@@ -3,7 +3,7 @@
 //  Shabby FitBit
 //
 //  Created by Samuel Horton on 6/17/14.
-//  Copyright (c) 2014 CSCI 3308. All rights reserved.
+//  Copyright (c) 2014 CSCI 3308. The MIT License (MIT)
 //
 
 #import "ViewController.h"
@@ -48,13 +48,7 @@
 
 - (IBAction)logInWithCredentials:(UIButton *)sender {
     
-    if ([userNameField.text isEqualToString:@""] || [passwordField.text isEqualToString:@""])
-    {
-        UIAlertView *alertView =[[ UIAlertView alloc]initWithTitle:@"Oops!" message:@"You left something blank! Please enter something and try again!" delegate:self cancelButtonTitle:@"Try Again" otherButtonTitles:nil, nil];
-        
-        [alertView show];
-        return;
-    }
+    
     userName = userNameField.text;
     password = passwordField.text;
     

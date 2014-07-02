@@ -3,7 +3,7 @@
 //  Shabby FitBit
 //
 //  Created by Samuel Horton on 6/25/14.
-//  Copyright (c) 2014 CSCI 3308. All rights reserved.
+//  Copyright (c) 2014 CSCI 3308. The MIT License (MIT)
 //
 
 #import "webViewController.h"
@@ -23,7 +23,7 @@
 {
     
     
-    NSString *post = [NSString stringWithFormat:@"&email=%@&pass=%@",@"test",@"test"];//&Submit=
+    NSString *post = [NSString stringWithFormat:@"&email=%@&pass=%@",userName,password];//&Submit=
     //login_form
     //pass
     //password
@@ -68,9 +68,10 @@
     
     
     testConnURL = conn.currentRequest.URL.absoluteString;
-    
+    [super didReceiveMemoryWarning];
     
 }
+
 
 
 -(void) connection:(NSURLConnection *) connection
@@ -83,7 +84,8 @@
     
     NSLog(@"Connection made");
     
-    NSURL *url = [NSURL URLWithString:@"http://www.facebook.com"];
+    //NSURL *url = [NSURL URLWithString:@"http://www.facebook.com"];
+    NSURL *url = [[NSURL alloc]initWithString:@"http://www.facebook.com"];
     
     //NSString *html = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     
@@ -92,9 +94,7 @@
     NSURLRequest* fbRequest = [[NSURLRequest alloc]initWithURL:url];
     [webView loadRequest:fbRequest];
     
-    NSString *myString = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
-    
-    NSLog(@"%@",myString);
+    [super didReceiveMemoryWarning];
     
 }
 
